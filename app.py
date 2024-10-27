@@ -13,8 +13,7 @@ class Hero(SQLModel, table=True):
     aliases: Optional[str] = Field(default='not found', index=True)
     base: Optional[str] = Field(default='not found', index=True)
 
-request_url = 'https://superheroapi.com/api/bb9fa70bc31611237ceec7a8e7d9a08b/70'
-request_url_post = 'https://superheroapi.com/api/bb9fa70bc31611237ceec7a8e7d9a08b/'
+
 engine = create_engine(str(settings.SQLALCHEMY_DATABASE_URI))
 
 
